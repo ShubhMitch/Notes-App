@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navHeading">
+        <span>Welcome to your Notes App</span>
+    </nav>
+
+    <div class="container">
+        <div class="info-container">
+            <div class="title">
+                <label for="title">Title: </label>
+                <input type="text" id ="title" class="input" placeholder="Enter the title">
+            </div>
+            <div class="title">
+                <label for="description">Description: </label>
+               <textarea name="description" id="description" class="textArea" id="" cols="30" rows="10" placeholder="Enter the description"></textarea>
+            </div>
+            <button id="add" class="submit">Add</button>
+            <button id="clearAll" class="submit clear" onclick="clearAll()">Clear All Notes</button>
+        </div>
+    </div>
+    <h1 style="padding: 1rem;">Your Notes</h1>
+    <div class="notes-container" id="notesjs">
+    <div class="notes" >
+        <div class="number">1</div>
+        <div class="notes-title" id="n-title">I am your title</div>
+        <div class="notes-description" id="n-description">
+            Thanks for adding me here!
+        </div>
+        <button class="submit clear">Delete Note</button>
+        
+    </div>
+   
+</div>
+    <footer id="footerNote">
+        Add some notes.
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
